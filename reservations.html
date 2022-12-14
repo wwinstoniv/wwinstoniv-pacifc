@@ -1,27 +1,58 @@
-
-<!--Header-->
-Pacific Trails Resort
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pacific Trails Resort</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="pacific.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Pacific Trails Resort</h1>
+		</header>
 <!--Navigation-->
-Home
-Yurts
-Activities
-Reservations
-
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="yurts.html">Yurts</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+			</ul>
+		</nav>
 <!--Main Section (Different on each page)-->
-Reservations at Pacific Trails
-Contact Us
-Required information is marked with an asterisk (*).
-
-<!--This will be a form-->
-*First Name: 
-*Last Name: 
-* E-mail: 
-Phone: 
-Arrival Date: 
-Nights: 
-Comments: 
-
-<!--Footer-->  
-Copyright &copy; 2016 Pacific Trails Resort
-yourfirstname@yourlastname.com
+		<main>
+			<h2>Reservations at Pacific Trails</h2>
+<!--Form-->			
+			<h3>Contact Us</h3>
+			<p>Required information is marked with an asterisk (*)</p>
+			<form action="https://webdevstudents.com/portfolio/submit-form.php" method="post">
+				<label for="myemail">*Email:</label><br>
+				<input type="email" name="myemail" id="myemail"><br>
+				<label for="first_name">*First Name:</label><br>
+				<input type="text" id="first_name" name="first_name" required><br>
+				<label for="last_name">*Last Name:</label><br>
+				<input type="text" id="last_name" name="last_name" required><br>
+				<label for="phone">Phone:</label><br>
+				<input type="tel" id="phone" name="phone"><br>
+				<label type="ArrivalDate">Arrival Date:</label><br>
+				<input type="date" id="arrival_date" name="arrival_date"><br>
+				<label type="number_of_nights">Number of Nights:</label><br>
+				<input type="number" id="number_of_nights" name="number_of_nights" min="1"><br>
+				<label for="comments">*Comments:</label><br>
+				<textarea id="comments" name="comments"></textarea><br>
+				<input type="submit" name="Submit"><br>
+			</form>
+		</main>
+<!--Footer-->
+		<footer>
+			<small>
+				<em>
+					&copy; 2021 Pacific Trails Resort. All rights reserved.<br>
+					<a href="mailto:me@gmail.com"> yourfirstname@yourlastname.com</a>
+				</em>
+			</small>
+		</footer>
+	</div>
+</body>
+</head>
